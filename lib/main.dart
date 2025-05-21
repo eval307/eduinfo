@@ -153,7 +153,7 @@ class LoginScreen extends StatelessWidget {
                   ),
                   const SizedBox(height: 20),
                   const Text(
-                    'EduNews',
+                    'EduInfo',
                     style: TextStyle(
                       color: Colors.white,
                       fontSize: 24,
