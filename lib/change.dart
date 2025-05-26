@@ -10,7 +10,7 @@ void main() {
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp({Key? key}) : super(key: key);
+  const MyApp({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -25,7 +25,7 @@ class MyApp extends StatelessWidget {
 }
 
 class SplashScreen extends StatefulWidget {
-  const SplashScreen({Key? key}) : super(key: key);
+  const SplashScreen({super.key});
 
   @override
   State<SplashScreen> createState() => _SplashScreenState();
@@ -113,7 +113,7 @@ class _SplashScreenState extends State<SplashScreen> with SingleTickerProviderSt
 }
 
 class LoginScreen extends StatelessWidget {
-  const LoginScreen({Key? key}) : super(key: key);
+  const LoginScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -212,7 +212,7 @@ class LoginScreen extends StatelessWidget {
                           // Navigate to registration page when 'Daftar' is pressed
                           Navigator.push(
                             context,
-                            MaterialPageRoute(builder: (_) => const RegistrationPage()),
+                            MaterialPageRoute(builder: (_) =>  RegisterScreen()),
                           );
                         },
                         child: const Text(
@@ -260,7 +260,7 @@ class LoginScreen extends StatelessWidget {
 
 // Add ChangePasswordPage class to fix navigation error
 class ChangePasswordPage extends StatefulWidget {
-  const ChangePasswordPage({Key? key}) : super(key: key);
+  const ChangePasswordPage({super.key});
 
   @override
   State<ChangePasswordPage> createState() => _ChangePasswordPageState();
@@ -431,7 +431,7 @@ class _ChangePasswordPageState extends State<ChangePasswordPage> {
 }
 
 class HomePage extends StatefulWidget {
-  const HomePage({Key? key}) : super(key: key);
+  const HomePage({super.key});
 
   @override
   State<HomePage> createState() => _HomePageState();
